@@ -14,23 +14,19 @@ module.exports = (sequelize) => {
       type: DataTypes.STRING,
       allowNull: false,
     },
-    description: {
-      type: DataTypes.STRING,
-      allowNull: false
-    },
     description:{
       type: DataTypes.STRING(5000),
       allowNull: false,
     },
-    released:{
+    releasedDate:{
       type: DataTypes.STRING,
-      allowNull: true,
+      allowNull: false,
     },
     rating:{
-      type: DataTypes.STRING,
+      type: DataTypes.FLOAT,
       allowNull: true,
     },
-    background_image:{
+    image:{
       type: DataTypes.STRING,
       allowNull: true,
     },
@@ -38,6 +34,10 @@ module.exports = (sequelize) => {
       type: DataTypes.BOOLEAN,
       allowNull: false,
       defaultValue: true
+    },
+    platforms: {
+      type: DataTypes.ARRAY(DataTypes.STRING),
+      allowNull: false
     }
   },
   {
