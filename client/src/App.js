@@ -1,11 +1,19 @@
 import './App.css';
+import { BrowserRouter, Route, Routes } from "react-router-dom" 
+import LandingPage from "./components/LandingPage"
+import Home from "./components/Home"
 
 function App() {
   return (
-    <div className="App">
-      <h1>Henry Videogames</h1>
-    </div>
+    <BrowserRouter>
+      <div className="App">
+        <Routes> 
+          <Route path='/' element={<LandingPage/>}/>
+          <Route path='/home' element={<Home/>}/>
+        </Routes>
+      </div>
+    </BrowserRouter>
   );
 }
-
+//Switch: Envuelve las rutas y las "recorre" renderizando solo la que coincida con el path en URL
 export default App;
