@@ -27,13 +27,12 @@ module.exports = (sequelize) => {
       allowNull: true,
     },
     image:{
-      type: DataTypes.STRING,
-      allowNull: true,
+      type: DataTypes.STRING
     },
-    createdInDb:{
+    CreatedInDb:{
       type: DataTypes.BOOLEAN,
       allowNull: false,
-      defaultValue: true
+      defaultValue: true    
     },
     platforms: {
       type: DataTypes.ARRAY(DataTypes.STRING),
