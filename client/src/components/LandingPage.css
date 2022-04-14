@@ -1,0 +1,25 @@
+.container{
+    width: auto;
+    height: 98vh;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    overflow-x: hidden;
+}
+
+.btn{
+    cursor: pointer;
+    border-radius: 5px;
+    background-color: rgb(224, 65, 73);
+}
+
+.btn:hover{
+    background-color: rgba(240, 248, 255, 0);
+    border-color:rgb(224, 65, 73);
+    color:rgb(224, 65, 73);
+    transition: 1s;
+}
+
+.title{
+    color: rgb(224, 65, 73);
+}

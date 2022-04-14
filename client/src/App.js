@@ -2,6 +2,9 @@ import './App.css';
 import { BrowserRouter, Route, Routes } from "react-router-dom" 
 import LandingPage from "./components/LandingPage"
 import Home from "./components/Home"
+import GetDetail from './components/GameDetail';
+import GameCreate from './components/GameCreate';
+// import CreateGames from './components/CreationGames';
 
 function App() {
   return (
@@ -10,6 +13,8 @@ function App() {
         <Routes> 
           <Route path='/' element={<LandingPage/>}/>
           <Route path='/home' element={<Home/>}/>
+          <Route path='/videogame' element={<GameCreate/>}></Route>
+          <Route path='/Home/:id' element={<GetDetail/>}/>
         </Routes>
       </div>
     </BrowserRouter>

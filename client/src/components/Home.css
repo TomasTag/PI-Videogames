@@ -1,0 +1,13 @@
+.container{
+    background-color: rgb(32, 30, 30);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+.cards{
+    display:inline-flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding-left: 20px;
+    background-color: rgb(20, 20, 20);
+}

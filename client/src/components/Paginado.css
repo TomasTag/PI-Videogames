@@ -1,0 +1,22 @@
+.numButton{
+    border-color: rgba(255, 255, 255, 0);
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, 0);
+    color: white;
+    margin: 2em;
+    padding: 1em;
+    float: left;
+    justify-content: center;
+}
+.numButton:hover{
+    background-color: rgba(255, 255, 255, 0);
+    border-radius: 20px;
+    color: white;
+    border-bottom-color: white;
+    border-top-color: white;
+    transition: 1s;
+}
+
+.paginado{
+    margin-left: 400px;
+}
