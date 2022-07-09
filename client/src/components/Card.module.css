@@ -1,5 +1,6 @@
 .container{
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    border-bottom: #0a000000;
 }
   
 .img{
@@ -20,21 +21,14 @@
 }
 
 .img:hover{
-    cursor: pointer;
-    transform:translateY(20px);
-    transition: all 0.2s;
     background: rgba(158, 7, 245, 0.226);
     height: 300px;
     width: 450px;
-    background-color: rgba(0, 0, 0, 0.247);
 }
 
 a{
   text-decoration: none !important;
-}
-
-a:hover{
-  color: wheat;
+  margin-left: 30%;
 }
 
 .card{
@@ -45,16 +39,11 @@ a:hover{
     border-radius: 20px;
 }  
 
-/* .container:hover{
+.container:hover{
     cursor: pointer;
     transform:translateZ(20px);
-    transition: all 0.2s;
-    background: rgba(158, 7, 245, 0.226);
-} */
-
-  /* .text{
-      color: transparent;
-  } */
+    transition: all 0.9s;
+}
 
 .text:hover{
   font-size: 20px;
@@ -87,67 +76,6 @@ a:hover{
         text-shadow: none;
     }    
   }
-  
-  .title {
-    color: wheat;
-    margin-left: 23px;
-    font-size: 23px;
-  }
-  
-  .score{
-    font-size: 18px;
-    margin-top: 15px;
-    color: rgb(236, 236, 236);
-    font-weight: bold;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; 
-  }
-  
-  
-  .label{
-    font-family: 'Kanit', sans-serif;
-    font-size: 25px;
-    font-weight: bolder;
-    color: rgb(226, 226, 226);
-    animation: flicker 1.5s infinite alternate;
-    margin-left: 25%;
-  }
-
-  @keyframes flicker {
-      
-    0%, 18%, 22%, 25%, 53%, 57%, 100% {
-  
-        text-shadow:
-        0 0 4px rgba(158, 12, 158, 0.63),
-        0 0 11px rgba(31, 16, 32, 0.589),
-        0 0 19px rgba(225, 7, 245, 0.918),
-        0 0 40px rgba(225, 7, 245, 0.589),
-        0 0 80px rgba(225, 7, 245, 0.589),
-        0 0 90px rgba(225, 7, 245, 0.589),
-        0 0 100px rgba(247, 8, 255, 0.746),
-        0 0 150px #0a0000;
-    
-    }
-    
-    20%, 24%, 55% {        
-        text-shadow: none;
-    }    
-  }
-  
-  .dish{
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size: 20px;
-    font-weight: bolder;
-    color:rgba(240, 240, 240, 0.76);
-    margin-left: 10%;
-    margin-top: 10px;
-  }
-  
-  .author{
-    font-size: 21px;
-    font-weight: bolder;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    color: rgb(213, 179, 245);
-}
   
   @media (max-width: 980px) {
     .card {
