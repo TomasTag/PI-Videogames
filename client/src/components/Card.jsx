@@ -1,6 +1,5 @@
 import React from "react";
 
-
 export default function Card({image, name, genres}) {
     return (
         <div className="card">
@@ -19,3 +18,4 @@ export default function Card({image, name, genres}) {
         </div>
     )
 }
+

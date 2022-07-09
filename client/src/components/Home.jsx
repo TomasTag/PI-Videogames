@@ -8,7 +8,7 @@ import {
     getDbVideogames,
     getApiVideogames } from "../actions";
 import { Link } from "react-router-dom"
-import Card from "./Card";
+import BootCard from "./BootCard";
 import Paginado from "./Paginado";
 import SearchBar from "./SearchBar";
 import "./Home.css"
@@ -74,10 +74,10 @@ export default function Home(){
     };
 
     return (
-        <div className="container">
+        <div className="container-home">
             <nav className="navBar">
             <Link to="/videogame">Create Game</Link>
-            <h1>VIDEOGAMES APP</h1>
+            <h1 className="title">VIDEOGAMES APP</h1>
             <button onClick={(event) => handleClick(event)}>
                 Reload games
             </button>
@@ -135,7 +135,7 @@ export default function Home(){
                             return(
                                 <div key={el.id}>
                                     <Link to={"/home/" + el.id}>
-                                        <Card 
+                                        <BootCard 
                                         image={el.image}  
                                         name={el.name} 
                                         genres={el.genres}

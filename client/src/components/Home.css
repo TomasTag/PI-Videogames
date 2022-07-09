@@ -1,13 +1,22 @@
-.container{
-    background-color: rgb(32, 30, 30);
+.container-home{
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
+    background-image:
+    linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.3)), 
+    url("https://as01.epimg.net/meristation/imagenes/2019/03/11/noticias/1552337673_317187_1552337727_noticia_normal.jpg");
+    width: auto;
+    height: 100%;
 }
+
 .cards{
     display:inline-flex;
     flex-wrap: wrap;
     justify-content: space-around;
     padding-left: 20px;
-    background-color: rgb(20, 20, 20);
+    font-size: 20px;
+}
+
+.title{
+    color: white;
 }

@@ -4,10 +4,14 @@ import "./LandingPage.css"
 
 export default function LandingPage(){
     return( 
-        <div className="container">
-            <h1 className="title">Welcome to my videogames app 🎮</h1>
+        <div className="container-land">
+            <div className="title-cont ">
+                <h1 className="title">🎮 videogames app 🎮</h1>
+            </div>
             <Link to="/Home">
-                <button className="btn">HOME</button>
+                <div className="btn-cont">
+                    <button className="btn-land">HOME</button>
+                </div>
             </Link>
         </div>
     

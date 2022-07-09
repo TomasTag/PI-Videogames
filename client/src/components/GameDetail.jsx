@@ -2,23 +2,33 @@ import React from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { useEffect } from "react";
 import { Link, useParams } from "react-router-dom";
-import { getGameId, clearDetail } from "../actions";
+import { getGameId, clearDetail, /*deleteGame, resetId*/ } from "../actions";
 import "./GameDetail.css"
 
 export default function GetDetail(){
     const { id } = useParams();
     const dispatch = useDispatch();
     const gameDetail = useSelector((state) => state.details)
+    
     useEffect(() => {
         dispatch(getGameId(id));
         return () => dispatch(clearDetail());
     }, [dispatch])
+
+    /*function handleDelete(id){
+        dispatch(deleteGame(id))
+        dispatch(resetId())
+        alert("Game eliminated.")
+    }*/
 
     return(
         <div className="container">
             <Link to="/Home">
                 <button className="btn">Back</button>
             </Link>
+            {/*gameDetail.CreatedInDb && (
+                <button onClick={() => handleDelete(id)}>Delete game</button>
+            )*/}
             <div className="subcontainer">
                 <h1>{gameDetail.name ? gameDetail.name : "Name not found."}</h1>
                 

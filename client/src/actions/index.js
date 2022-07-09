@@ -122,3 +122,22 @@ export function createDb(payload){
         payload
     };
 }
+
+/*export function deleteGame(id){
+        try {
+            await axios.delete(`/deleted/${id}`)
+            return dispatch({
+                type: "DELETE_GAME",               
+            });
+        } catch (error) {
+            console.log(error)
+        }
+    }
+}
+
+export function resetId(payload){
+    return{
+        type: "RESET_ID",
+        payload
+    }
+}*/

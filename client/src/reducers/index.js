@@ -59,7 +59,7 @@ function rootReducer(state=initialState, action){
             };
         case "FILTER_CREATED_GAMES": 
             let createdFilter = action.payload === "creados" 
-            ? state.allVideogames.filter((elem) => elem[0].CreatedInDb)
+            ? state.allVideogames.filter((elem) => elem.CreatedInDb)
             : state.allVideogames
             return {
                 ...state,
@@ -98,6 +98,16 @@ function rootReducer(state=initialState, action){
                 ...state,
                 videogames: action.payload === "All" ? state.allVideogames : orderedRating
             }
+        /*case "DELETE_GAME":
+            return{
+                ...state
+            }
+        case "RSEET_ID":
+            return{
+                ...state,
+                details: [],
+                videogames: []
+            }*/
         default:
             return state
     } 
