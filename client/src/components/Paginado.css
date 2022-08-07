@@ -2,7 +2,7 @@
     border-color: rgba(255, 255, 255, 0);
     cursor: pointer;
     background-color: rgba(0, 0, 0, 0);
-    color: white;
+    color: rgb(196, 128, 255);
     margin: 2em;
     padding: 1em;
     float: left;
@@ -11,9 +11,8 @@
 .numButton:hover{
     background-color: rgba(255, 255, 255, 0);
     border-radius: 20px;
-    color: white;
-    border-bottom-color: white;
-    border-top-color: white;
+    border-bottom-color: rgb(196, 128, 255);
+    border-top-color: rgb(196, 128, 255);
     transition: 1s;
 }
 

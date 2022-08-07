@@ -76,9 +76,13 @@ export default function Home(){
     return (
         <div className="container-home">
             <nav className="navBar">
-            <Link to="/videogame">Create Game</Link>
             <h1 className="title">VIDEOGAMES APP</h1>
-            <button onClick={(event) => handleClick(event)}>
+            <Link to="/videogame">
+                <button className="createBtn">
+                    Create Game
+                </button>
+            </Link>
+            <button className="reloadBtn" onClick={(event) => handleClick(event)}>
                 Reload games
             </button>
             <div>
