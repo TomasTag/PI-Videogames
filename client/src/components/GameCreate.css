@@ -1,0 +1,39 @@
+.containerCreate{
+    background-color: rgb(45, 43, 43);
+    display: flex;
+    flex-direction: column;
+    min-width: 100%;
+    min-height: 100%;
+    color: white;
+}
+
+.submitBtn{
+    margin: 20px;
+    color: white;
+    width: 80px;
+    height: 30px;
+    border: none;
+    border-color: rgb(194, 138, 245);
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0);
+    box-shadow: 0 0 40px 40px rgb(194, 138, 245) inset;
+    transition: box-shadow 0.2s ease-in-out;
+}
+
+.submitBtn:hover{
+    box-shadow: 0 0 5px 5px rgb(194, 138, 245) inset, 0 0 10px 4px rgb(194, 138, 245);
+    color: rgb(194, 138, 245);
+}
+
+.formInput{
+    margin-top: 30px;
+    margin-left: 10px;
+}
+
+h3{
+    margin-top: 30px;
+}
+
+select{
+    margin-top: 60px;
+}

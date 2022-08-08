@@ -3,6 +3,8 @@ import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import { getGenres, postGame, getVideogames } from "../actions";
 import { useDispatch, useSelector } from "react-redux";
+import BackButton  from "./BackButton.jsx"
+import "./GameCreate.css"
 
 function validate(input){
     let error = {}
@@ -129,34 +131,36 @@ export default function GameCreate(){
     }
 
     return(
-        <div>
-            <Link to="/Home">
-                <button>Back</button>
-            </Link>
-            <h1>Let's create a game!!</h1>
-            <form onSubmit={e => handleSubmit(e)}>
+        <div className="containerCreate">
+            <div className="backBtn">
+                <Link to="/Home">
+                    <BackButton />
+                </Link>
+            </div>
+            <h1 className="titleCreate">Let's create a game!!</h1>
+            <form onSubmit={e => handleSubmit(e)} className="formCreate">
                 <div>
                     <label>Name: </label>
-                    <input type="text" value={input.name} name="name" onChange={e => handleInput(e)}/>
+                    <input className="formInput" type="text" value={input.name} name="name" onChange={e => handleInput(e)}/>
                 </div>
                     {error.name && <p>{error.name}</p>}
                 <div>
                     <label>Image: </label>
-                    <input type="text" value={input.image} name="image" onChange={e => handleInput(e)}/>
+                    <input className="formInput" type="text" value={input.image} name="image" onChange={e => handleInput(e)}/>
                 </div>
                 <div>
                     <label>Released Date: </label>
-                    <input type="text" value={input.releasedDate} name="releasedDate" onChange={e => handleInput(e)}/>
+                    <input className="formInput" type="text" value={input.releasedDate} name="releasedDate" onChange={e => handleInput(e)}/>
                     {error.releasedDate && <p>{error.releasedDate}</p>}
                 </div>
                 <div>
                     <label>Description: </label>
-                    <input type="text" value={input.description} name="description" onChange={e => handleInput(e)}/>
+                    <input className="formInput" type="text" value={input.description} name="description" onChange={e => handleInput(e)}/>
                     {error.description && <p>{error.description}</p>}
                 </div>
                 <div>
                     <label>Rating: </label>
-                    <input type="number" value={input.rating} name="rating" onChange={e => handleInput(e)}/>
+                    <input className="formInput" type="number" value={input.rating} name="rating" onChange={e => handleInput(e)}/>
                     {error.rating && <p>{error.rating}</p>}
                 </div>
                 <div>
@@ -193,7 +197,7 @@ export default function GameCreate(){
                         </div>
                     ))}
                 </div>
-                <button type="submit">Submit</button>
+                <button type="submit" className="submitBtn">Submit</button>
             </form>
         </div>
     )

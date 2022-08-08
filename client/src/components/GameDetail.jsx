@@ -22,7 +22,7 @@ export default function GetDetail(){
                 <BackButton />
             </Link>
             <div className="subcontainer">
-                    <h1>{gameDetail.name ? gameDetail.name : "Name not found."}</h1>
+                    <h1 className="name">{gameDetail.name ? gameDetail.name : "Name not found."}</h1>
                     <img className="image" height="300px" width="500px" src={gameDetail.image ? gameDetail.image : "Image not found"}/>
             </div>
             <div>

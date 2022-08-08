@@ -3,6 +3,14 @@
     color: aliceblue;
     display: grid;
     grid-template-columns: auto auto auto;
+    padding-top: 20px;
+    min-height: 100%;
+    min-width: 100%;
+}
+
+.subcontainer{
+    padding-top: 70px;
+    padding-right: 30px;
 }
 
 .categories{
@@ -12,4 +20,3 @@
 label{
     color: violet;
 }
-
