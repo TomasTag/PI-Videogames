@@ -1,0 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&family=Gentium+Plus&family=Roboto:wght@100&display=swap');
+
+.foot{
+    background: rgba(191, 131, 247, 0.174);
+    color: #fff; 
+    width: 100%;
+    overflow: hidden;
+    font-family: 'Roboto';
+}
+
+.copyR{
+    position: relative;
+    margin-right: 93%;
+    margin-top: 5%;
+}
+
+.app{
+    color: rgb(251, 255, 0);
+}

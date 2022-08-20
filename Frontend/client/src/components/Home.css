@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&family=Gentium+Plus&family=Roboto:wght@100&display=swap');
+
+.container-home{
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-image:
+    linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.3)), 
+    url("https://as01.epimg.net/meristation/imagenes/2019/03/11/noticias/1552337673_317187_1552337727_noticia_normal.jpg");
+    width: auto;
+    height: 100%;
+}
+
+.cards{
+    display:inline-flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding-left: 20px;
+    font-size: 20px;
+}
+
+.title{
+    font-family: "Fredoka One";
+    font-weight: bold;
+    position: relative;
+    transition: all 300ms ease-in-out;
+    color: rgb(162, 77, 241);
+    cursor: pointer;
+    text-shadow: 0 0 5px rgb(194, 138, 245), 0 0 5px rgb(194, 138, 245), 0 0 5px rgb(194, 138, 245);
+}
+
+.title:hover{
+    filter: contrast(250%);
+}
+
+.reloadBtn{
+    color: white;
+    width: 130px;
+    height: 50px;
+    border: none;
+    border-color: rgb(194, 138, 245);
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0);
+    box-shadow: 0 0 40px 40px rgb(194, 138, 245) inset;
+    transition: box-shadow 0.2s ease-in-out;
+    margin-left: 30px;
+}
+
+.reloadBtn:hover{
+    box-shadow: 0 0 5px 5px rgb(194, 138, 245) inset, 0 0 10px 4px rgb(194, 138, 245);
+    color: rgb(194, 138, 245);
+}
+
+.createBtn{
+    color: white;
+    width: 130px;
+    height: 50px;
+    border: none;
+    border-color: rgb(194, 138, 245);
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0);
+    box-shadow: 0 0 40px 40px rgb(194, 138, 245) inset;
+    transition: box-shadow 0.2s ease-in-out;
+}
+
+.createBtn:hover{
+    box-shadow: 0 0 5px 5px rgb(194, 138, 245) inset, 0 0 10px 4px rgb(194, 138, 245);
+    color: rgb(194, 138, 245);
+}
+
+.navBar{
+    background-color: rgba(191, 131, 247, 0.174);
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.selectStyle{
+    background-color: rgba(140, 69, 248, 0.32);
+    color: rgb(255, 253, 253);
+    margin-top: 0px;
+}
