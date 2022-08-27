@@ -12,6 +12,7 @@ import BootCard from "./BootCard";
 import Paginado from "./Paginado";
 import SearchBar from "./SearchBar";
 import Footer from "./Footer";
+import ScrollToTop from "react-scroll-to-top";
 import "./Home.css"
 
 
@@ -151,10 +152,11 @@ export default function Home(){
                         })
                     }
                 </div>
+            <ScrollToTop smooth top="1800"/>
             <Footer />
         </div>
     )
-
-
-
+    
+    
+    
 }

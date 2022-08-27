@@ -4,8 +4,9 @@ import "./ContactMe.css"
 const ContactMe = () => {
   return (
     <div className='cnt'>
-        <input classname="inputContact" type="text" />
-        <input classname="inputContact" type="text" />
+        <a className="contacts" href="https://www.linkedin.com/in/tomastagliaferri-fullstack/">LinkedIn</a>
+        <a className="contacts" href="mailto:tomitaglia2000@gmail.com">Mail</a>
+        <a className="contacts" href="https://github.com/TomasTag">Github</a>
     </div>
   )
 }
